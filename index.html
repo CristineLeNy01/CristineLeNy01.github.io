@@ -11,55 +11,115 @@
 
 <!--Navigation Style-->
   <style>
-    .topnav
+    .tab
 {
 	overflow : hidden;
 	background-color : #333; 
 }
+	.tab button
+	{
+		background-color: inherit;
+		float: left;
+		color : #f2f2f2;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transistion: .3s;
+		font-size: 17px;
+	}
 
-/*style for tabs within the navigation bar*/
-.topnav a
-{
-	float : left; 
-	color : #f2f2f2; 
-	text-align : center; 
-	padding : 14px 16px; 
-	text-decoration : none; 
-	font-size: 17px; 
-}
 
-.topnav a:hover
+.tab button:hover
 {
-	background-color : #ddd; /*gray*/
+	background-color : #ddd; 
 	color : black;
 }
 
-.topnav a.active 
+.tab button.active 
 {
 	background-color : #154734;
 	color : white;
 }
+	.tabContent
+	{
+		display:none;
+		padding: 6px 12px;
+		border: none;
+		border-top:none;
+	}
 
   </style>
 </head>
   
 <body>
   <!-- Navigation -->
-    <div class id = "topnav">
-    <div class= "topnav">
-      <a class = "active" href = "#index">Home</a>
-      <a href = "#about">About</a>
-      <a href = "#music">Music</a>
-      <a href = "#tour">Tour</a>
-      <a href = "#merch">Merch</a>
-      <a href = "#gallery">Gallery</a>
-      <a href = "#contact">Contact Us</a>
+    <div class= "tab">
+      <button class = "tablinks" onclick = "openPage(event,'Home')">Home</button>
+      <button class = "tablinks" onclick = "openPage(event,'About')">About</button>
+      <button class = "tablinks" onclick = "openPage(event,'Music')">Music</button>
+      <button class = "tablinks" onclick = "openPage(event,'Tour')">Tour</button>
+      <button class = "tablinks" onclick = "openPage(event,'Merch')">Merch</button>
+      <button class = "tablinks" onclick = "openPage(event,'Gallery')">Gallery</button>
+      <button class = "tablinks" onclick = "openPage(event,'ContactUs')">Contact Us</button>
     </div>
 
       <!--Home Page-->
-      <div id = "banner">
+      <div id = "Home" class = "tabContent">
         <img src = "MainPageImage.jpg">
       </div>
+	    
+      <!--About Page-->
+      <div id = "About" class = "tabContent">
+        <p>Information about band will be added soon.</p>
+      </div>
+
+	<!--Music Page-->
+      <div id = "Music" class = "tabContent">
+        <p>Music will be added soon.</p>
+      </div>
+
+	<!--Tour Page-->
+      <div id = "Tour" class = "tabContent">
+        <p>Tour information will be added soon.</p>
+      </div>
+
+	<!--Merch Page-->
+      <div id = "Merch" class = "tabContent">
+        <p>Merchandise will be added soon.</p>
+      </div>
+
+	<!--Gallery Page-->
+      <div id = "Gallery" class = "tabContent">
+        <p>Images and Videos of the band will be added soon.</p>
+      </div>
+
+	<!--Contact Page-->
+      <div id = "ContactUs" class = "tabContent">
+        <p>Contact information will be added soon.</p>
+      </div>
+
+	<!--Script to change the tab-->
+	    <script>
+		    function openPage(evt, tabName)
+			    {
+				    var i, tablinks, tabContent;
+
+				    tabContent = document.getElementsByClassName("tabContent");
+				    tablinks = document.getElementsByClassName("tablinks");
+				    for (i=0; i<tabContent.length; i++)
+					    {
+						    tabContent[i].style.display = "none";
+					    }
+
+  				for (i = 0; i < tablinks.length; i++) 
+					{
+   						tablinks[i].className = tablinks[i].className.replace(" active", "");
+  					}
+				    document.getElementById(tabName).style.display = "block";
+				    evt.currentTarget.className += "active";
+			    }
+	    </script>
 </body>
 </html>
 
