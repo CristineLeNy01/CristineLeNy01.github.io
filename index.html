@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- sets parameters-->
-    <link rel = "stylesheet" href = "web.ccs">
-    <meta charset = "utf-8">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-    
-    <!--sets bowser name-->
-    <title>NecroGarden</title>
-  </head>
+<head>
+<!-- sets parameters-->
+<link rel = "stylesheet" href = "web.ccs">
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
   
-<body>
-  <!-- Navigation -->
-  <header >
-    <div class id = "topnav">
-      <a class = "active" href = "index.html">Home</a>
-      <a class = "active" href = "about.html">About</a>
-      <a class = "active" href = "music.html">Music</a>
-      <a class = "active" href = "tour.html">Tour</a>
-      <a class = "active" href = "merch.html">Merch</a>
-      <a class = "active" href = "gallery.html">Gallery</a>
-      <a class = "active" href = "contact.html">Contact Us</a>
-  </header>
-
-      <!--Home Page-->
-      <div id = "banner">
-        <img src = "MainPageImage.jpg">
-      </div>
-
-  <!-- Top Nav Format-->
-    .topnav
+<!-- Top Nav Format-->
+<style>
+body 
 {
-	background-color : #333; 
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+	
+.topnav
+{
 	overflow : hidden;
+	background-color : #333; 
 }
 
 /*style for tabs within the navigation bar*/
@@ -41,9 +26,9 @@
 	float : left; 
 	color : #f2f2f2; 
 	text-align : center; 
-	padding : 14px 16 px; 
+	padding : 14px 16px; 
 	text-decoration : none; 
-	font size: 17px; 
+	font-size: 17px; 
 }
 
 .topnav a:hover
@@ -57,6 +42,29 @@
 	background-color : #154734;
 	color : white;
 }
+</style>
+  
+<!--sets bowser name-->
+<title>NecroGarden</title>
+</head>
+  
+<body>
+  <!-- Navigation -->
+    <div class id = "topnav">
+    <div class= "topnav">
+      <a class = "active" href = "#index">Home</a>
+      <a href = "#about">About</a>
+      <a href = "#music">Music</a>
+      <a href = "#tour">Tour</a>
+      <a href = "#merch">Merch</a>
+      <a href = "#gallery">Gallery</a>
+      <a href = "#contact">Contact Us</a>
+    </div>
+
+      <!--Home Page-->
+      <div id = "banner">
+        <img src = "MainPageImage.jpg">
+      </div>
 </body>
 </html>
 
