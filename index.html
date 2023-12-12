@@ -50,14 +50,22 @@
 	}
 
 /*Create image colums*/
-		.image
+		.row
+		{
+			display:-ms-flexbox;
+			diplay:flex;
+			-ms-flex-wrap:wrap;
+			flex-wrap: wrap;
+			padding: 0 4px;
+		}
+		.column
 		{
 			-ms-flex:50%;
 			flex:50%;
 			padding: 0 4px;
 		}
 
-		.image img
+		.column img
 		{
 			margin-top: 8px;
 			vertical-align: middle;
@@ -109,22 +117,24 @@
 
 	<!--Gallery Page-->
       <div id = "Gallery" class = "tabContent">
-        <div class = "image">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-	</div>
-	      
-	<div class = "image">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
-		<img src = "MainPageImage.jpg" style = "width : 100%">
+	<div class = "row">
+	        <div class = "column">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+		</div>
+		      
+		<div class = "column">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+			<img src = "MainPageImage.jpg" style = "width : 100%">
+		</div>
 	</div>
       </div>
 
