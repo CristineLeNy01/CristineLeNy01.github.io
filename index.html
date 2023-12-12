@@ -48,6 +48,20 @@
 		border: none;
 		border-top:none;
 	}
+
+/*Create image colums*/
+		.image
+		{
+			-ms-flex:50%;
+			flex:50%;
+			padding: 0 4px;
+		}
+
+		.image img
+		{
+			margin-top: 8px;
+			vertical-align: middle;
+		}
   </style>
 </head>
   
@@ -70,7 +84,7 @@
 <!--Content within each of the pages-->
       <!--Home Page-->
       <div id = "Home" class = "tabContent">
-	<img src = "MainPageImage.jpg">
+	<img src = "MainPageImage.jpg" style = "width : 100%">
       </div>
 	    
       <!--About Page-->
@@ -95,7 +109,14 @@
 
 	<!--Gallery Page-->
       <div id = "Gallery" class = "tabContent">
-        <p>Images and Videos of the band will be added soon.</p>
+        <div class = "image">
+		<img src = "MainPageImage.jpg" style = "width : 100%">
+		<img src = "MainPageImage.jpg" style = "width : 100%">
+		<img src = "MainPageImage.jpg" style = "width : 100%">
+		<img src = "MainPageImage.jpg" style = "width : 100%">
+		<img src = "MainPageImage.jpg" style = "width : 100%">
+		<img src = "MainPageImage.jpg" style = "width : 100%">
+	</div>
       </div>
 
 	<!--Contact Page-->
@@ -126,6 +147,7 @@
 
 		    <!-- Clicks on the Default Open Tab-->
 			    document.getElementById("defaultOpen").click();
+
 	    </script>
 </body>
 </html>
