@@ -144,7 +144,7 @@ body
 	<!--Music Page-->
       <div id = "Music" class = "tabContent">
         <div class = "media-bar">
-		<button class = "spotify" onclick = "window.open.href='https://open.spotify.com/album/32VaqUBYWNJEYul7REpQ2K';"><i class = "fa fa-spotify"></i></button>
+		<button class = "spotify" onclick = "openSpotify()"><i class = "fa fa-spotify"></i></button>
 	</div>
       </div>
 
@@ -219,9 +219,14 @@ body
 
 		    <!-- Clicks on the Default Open Tab-->
 			    document.getElementById("defaultOpen").click();
+                
+            <!--Open Spotify-->
+            function openSpotify()
+            {
+            window.open('https://open.spotify.com/album/32VaqUBYWNJEYul7REpQ2K');
+            }
 
 
 	    </script>
 </body>
 </html>
-
