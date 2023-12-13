@@ -137,13 +137,20 @@ body
   flex: 75%;
   padding: 0 4px;
 }
-.musicSnip
+.wrapper
 {
-  -ms-flex: 75%; 
-  flex: 75%;
-  padding: 0 4px;
+    display: table;
+    height: 370px;
+    width: 370px;
+    border: 1px solid #c0c0c0;
 }
 
+.cell
+{
+	display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
 @media (max-width: 600px) {
   section 
 	{
@@ -185,6 +192,7 @@ body
 		<h>Listen To Us On</h>
         	 <div class = "media-bar">
 			<button class = "spotify" onclick = "openSpotify()"><i class = "fa fa-spotify"></i></button>
+            <button class = "spotify" onclick = "openSpotify()"><i class = "fa fa-spotify"></i></button>
 		</div>
         </nav>
         
@@ -195,7 +203,8 @@ body
                 <img src = "/images/IMG_2085.JPG" style = "width : 100%">
             </div>
         </nav>
-        <div class = "musicSnip">
+        <div class = "wrapper">
+        <div class = "cell">
             <audio controls>
 		    <source src="horse.mp3" type="audio/mpeg">
 	    </audio>
@@ -205,6 +214,7 @@ body
                     <audio controls>
 		    <source src="horse.mp3" type="audio/mpeg">
 	    </audio>
+        </div>
         </div>
               </section>
       </div>
