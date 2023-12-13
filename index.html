@@ -89,9 +89,9 @@ body
 			  -webkit-flex: 3;
 			  -ms-flex: 3;
 			  flex: 3;
-			  background-color: #f1f1f1;
+			  background-color: none;
 			  padding: 10px;
-			border:none;
+              border:none;
 		}
 	.media-bar button
 		{
@@ -111,7 +111,7 @@ body
 		{
 			background-color : #04AA6D;
 			color: white;
-            		border: none;
+            border: none;
 		}
  /*Music snips*/
 /* Container for flexboxes */
@@ -119,6 +119,7 @@ body
     {
       display: -webkit-flex;
       display: flex;
+      background : #ccc;
     }
 
     /* Style the navigation menu */
@@ -180,12 +181,18 @@ body
 			<button class = "spotify" onclick = "openSpotify()"><i class = "fa fa-spotify"></i></button>
 			</div>
         </nav>
+        
+         <nav>
         	<div class = "mediaColumn">
             	<img src = "/images/IMG_2085.JPG" style = "width : 100%">
                 <img src = "/images/IMG_2085.JPG" style = "width : 100%">
                 <img src = "/images/IMG_2085.JPG" style = "width : 100%">
             </div>
-       
+        </nav>
+        
+            <audio controls>
+       			<source src="horse.mp3" type="audio/mpeg">
+      		</audio>
               </section>
       </div>
 
